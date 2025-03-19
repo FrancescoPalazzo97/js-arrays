@@ -14,7 +14,8 @@ const reversedTeachers = teachers.reverse(); // Metodo che inverte l'ordine degl
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
-const longNames = null;
+const longNames = teachers.filter(name => name.length >= 5); // Metodo che filtra gli elementi dell'array in base ad una condizione, in questo caso, la lunghezza del nome deve essere maggiore o uguale a 5 caratteri
+console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
