@@ -24,7 +24,10 @@ console.log(teachers); // Output: Elenco degli insegnanti senza l'ultimo insegna
 console.log(`L'ultimo insegnante era ${lastTeacher}`); // Output: L'ultimo insegnante era Luca
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+const firstTeacher = teachers[0];
+teachers.shift();
+console.log(teachers); // Output: Elenco degli insegnanti senza il primo insegnante
+console.log(`Il primo insegnante era ${firstTeacher}`); // Output: Il primo insegnante era Nathan
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
