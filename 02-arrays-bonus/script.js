@@ -18,6 +18,12 @@ const longNames = teachers.filter(name => name.length >= 5); // Metodo che filtr
 console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i] === 'Ed') {
+    teachers.splice(i, 1); // rimuovo 'Ed' dall'array
+  }
+}
+console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
