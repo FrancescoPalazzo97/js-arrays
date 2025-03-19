@@ -14,6 +14,8 @@ const fourthTeacher = teachers[3];
 console.log(`Il quarto insegnante è ${fourthTeacher}`); // Output: Phil
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
+teachers.splice(4, 1, 'Patrick');
+console.log(teachers); // Output: Elenco degli insegnanti con Patrick al posto di Carlo
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = null;
