@@ -45,10 +45,17 @@ for (let i = 0; i < teachers.length; i++) { // ciclo for per scorrere l'array te
     nameIndex = i; // salvo l'indice dell'elemento in nameIndex
   }
 }
-
 // e salvalo nella variabile lewisIndex
 const lewisIndex = nameIndex; // salvo l'indice dell'elemento 'Lewis' in lewisIndex
 
 // 8. Verifica se l'array teachers è vuoto
+let emptyArray = false; // dichiaro la variabile emptyArray e la inizializzo a false
+
+if (teachers.length === 0) { // verifico se la lunghezza dell'array è uguale a 0
+  console.log('L\'array teachers è vuoto'); // se vero stampo il messaggio
+  emptyArray = true; // assegno true alla variabile emptyArray nel caso in cui l'array sia vuoto
+} else {
+  console.log('L\'array teachers non è vuoto'); // altrimenti stampo questo messaggio
+}
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+const isTeachersEmpty = emptyArray; // salvo il risultato in isTeachersEmpty
