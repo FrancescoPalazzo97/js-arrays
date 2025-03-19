@@ -37,4 +37,5 @@ const isFabioPresent = present; // salvo il risultato nella variabile isFabioPre
 console.log(isFabioPresent); // stampo il risultato
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = teachers.join(', '); // Metodo che unisce tutti gli elementi dell'array in una stringa separata da virgole
+console.log(teachersString); // stampo il risultato
