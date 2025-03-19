@@ -30,6 +30,8 @@ console.log(teachers); // Output: Elenco degli insegnanti senza il primo insegna
 console.log(`Il primo insegnante era ${firstTeacher}`); // Output: Il primo insegnante era Nathan
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+teachers.push('Vanessa');
+console.log(teachers); // Output: Elenco degli insegnanti con Vanessa alla fine
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
