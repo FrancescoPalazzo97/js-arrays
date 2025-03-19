@@ -38,8 +38,16 @@ teachers.unshift('Sarah');
 console.log(teachers); // Output: Elenco degli insegnanti con Sarah all'inizio
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
+let nameIndex // dichiaro la variabile nameIndex
+
+for (let i = 0; i < teachers.length; i++) { // ciclo for per scorrere l'array teachers
+  if (teachers[i] === 'Lewis') { // verifico se l'elemento dell'array è uguale a 'Lewis'
+    nameIndex = i; // salvo l'indice dell'elemento in nameIndex
+  }
+}
+
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+const lewisIndex = nameIndex; // salvo l'indice dell'elemento 'Lewis' in lewisIndex
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
