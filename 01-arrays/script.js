@@ -18,8 +18,7 @@ teachers.splice(4, 1, 'Patrick');
 console.log(teachers); // Output: Elenco degli insegnanti con Patrick al posto di Carlo
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = teachers[teachers.length - 1];
-teachers.pop();
+const lastTeacher = teachers.pop(); // Metodo che rimuove l'ultimo elemento dall'array e lo restituisce
 console.log(teachers); // Output: Elenco degli insegnanti senza l'ultimo insegnante
 console.log(`L'ultimo insegnante era ${lastTeacher}`); // Output: L'ultimo insegnante era Luca
 
