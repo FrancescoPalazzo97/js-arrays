@@ -10,7 +10,13 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = teachers.reverse(); // Metodo che inverte l'ordine degli elementi nell'array
+// const reversedTeachers = teachers.reverse(); // Metodo che inverte l'ordine degli elementi nell'array
+let temp = []; // dichiaro un array temporaneo
+for (let i = teachers.length - 1; i >= 0; i--) { // ciclo for per scorrere l'array teachers al contrario
+  temp.push(teachers[i]); // aggiungo gli elementi dell'array teachers all'array temporaneo
+}
+const reversedTeachers = temp; // salvo il risultato nell'array reversedTeachers
+console.log(reversedTeachers);
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
@@ -44,5 +50,16 @@ const isFabioPresent = present; // salvo il risultato nella variabile isFabioPre
 console.log(isFabioPresent); // stampo il risultato
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = teachers.join(', '); // Metodo che unisce tutti gli elementi dell'array in una stringa separata da virgole
+// const teachersString = teachers.join(', '); // Metodo che unisce tutti gli elementi dell'array in una stringa separata da virgole
+// console.log(teachersString); // stampo il risultato
+let tempString = ''; // dichiaro una stringa temporanea
+for (let i = 0; i < teachers.length; i++) { // ciclo for per scorrere l'array teachers
+  if (i === teachers.length - 1) { // verifico se l'elemento è l'ultimo
+    tempString += teachers[i]; // se l'elemento è l'ultimo, non aggiungo la virgola
+  }
+  else {
+    tempString += teachers[i] + ', '; // altrimenti aggiungo la virgola
+  }
+}
+const teachersString = tempString; // salvo il risultato nella variabile teachersString
 console.log(teachersString); // stampo il risultato

@@ -58,3 +58,12 @@ if (teachers.length === 0) { // verifico se la lunghezza dell'array è uguale a 
 }
 // e salva il risultato nella variabile isTeachersEmpty
 const isTeachersEmpty = emptyArray; // salvo il risultato in isTeachersEmpty
+
+//8a. Verifica se l'array teachers è vuoto
+// Metodo alternaitvopiù efficiente
+const isTeachersEmpty2 = teachers.length === 0; // dichiaro la variabile isTeachersEmpty2 e assegno il risultato della condizione all'interno delle parentesi
+if (isTeachersEmpty2) { // verifico se l'array è vuoto
+  console.log(`L'array è vuoto? ${isTeachersEmpty2}`); // se vero stampo il messaggio
+} else { 
+  console.log(`L'array è vuoto? ${isTeachersEmpty2}`); // altrimenti stampo questo messaggio
+}
